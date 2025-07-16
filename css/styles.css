@@ -33,7 +33,6 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --transition-slow: 0.5s ease;
-}
 
 /* ===== Base Styles ===== */
 *,
@@ -1559,3 +1558,4 @@ article.team-member {
   .nav-item {
     margin: 0.5rem 0;
   }
+ 
