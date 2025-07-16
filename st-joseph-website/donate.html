@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate | St. Joseph the Worker Training Centre</title>
+  <meta name="description" content="Support vocational training and youth empowerment in Karamoja through your generous donation." />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Additional Donate Page Styles */
+    main#main-content {
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    .hero {
+      background: url('images/hero-donate.jpg') center/cover no-repeat;
+      padding: 6rem 0;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero-title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text {
+      font-size: 1.3rem;
+    }
+    section.section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-family: 'Roboto', sans-serif;
+      color: var(--primary, #E04B1A);
+      font-weight: 700;
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    form.form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form select {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="number"]:focus,
+    form select:focus {
+      border-color: var(--primary, #E04B1A);
+      outline: none;
+    }
+    .btn-primary {
+      background-color: var(--primary, #E04B1A);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background-color: #b3390f;
+      outline: none;
+    }
+    .note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .bank-details {
+      background: #fff7f0;
+      border: 2px solid var(--primary, #E04B1A);
+      padding: 1.8rem 2rem;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto 1rem;
+      font-size: 1.1rem;
+      color: #333;
+      box-shadow: 0 4px 12px rgb(224 75 26 / 0.3);
+    }
+    .bank-details p {
+      margin: 0.5rem 0;
+    }
+    .mission-list {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 1rem 2rem;
+      font-weight: 600;
+      color: #444;
+    }
+    .mission-list li {
+      position: relative;
+      padding-left: 2.5rem;
+      font-size: 1.1rem;
+    }
+    .mission-list li i {
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--primary, #E04B1A);
+      font-size: 1.5rem;
+    }
+    section.cta {
+      background-color: var(--primary, #E04B1A);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+      margin-top: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section.cta h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    section.cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    section.cta .btn-primary {
+      width: auto;
+      padding: 0.8rem 2.5rem;
+      font-size: 1.2rem;
+    }
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 2.1rem;
+      }
+      form.form {
+        padding: 1.5rem;
+        max-width: 100%;
+      }
+      .bank-details {
+        max-width: 100%;
+        padding: 1.2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+<style>
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary, #E04B1A);
+    color: white;
+    padding: 8px 16px;
+    z-index: 100;
+    transition: top 0.3s;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+</style>
+
+  <!-- Top Info Bar -->
+  <div class="info-bar" aria-label="Utility navigation">
+    <div class="container">
+      <div class="info-links">
+        <a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        <a href="faq.html"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQ</a>
+        <div class="language-selector">
+          <button aria-haspopup="listbox" aria-expanded="false" aria-controls="language-options">
+            EN <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="St. Joseph the Worker Vocational Training Center Logo" />
+      </a>
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li class="nav-item nav-dropdown"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li class="nav-item nav-dropdown"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="donate.html" class="donate-btn active" aria-label="Donate">Donate</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+          <nav aria-label="Breadcrumb" class="breadcrumb-container" style="max-width:900px; margin:1rem auto; padding:0 1rem;">
+          <ol class="breadcrumb" style="list-style:none; display:flex; gap:0.5rem; font-size:0.9rem; color:#555;">
+            <li><a href="index.html" style="color:var(--primary, #E04B1A); text-decoration:none;">Home</a></li>
+            <li aria-hidden="true">›</li>
+            <li><a href="#" style="color:var(--primary, #E04B1A); text-decoration:none;">Engage</a></li>
+            <li aria-hidden="true">›</li>
+            <li aria-current="page" style="color:#333; font-weight:700;">Donate</li>
+          </ol>
+        </nav>
+
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" role="banner" aria-label="Donate Hero Image">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Empower Youth Through Your Support</h1>
+          <p class="hero-text">Help us build a brighter future for Karamoja by supporting our vocational programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="section donate-form" aria-labelledby="donate-title">
+      <div class="container">
+        <h2 id="donate-title" class="section-title">Make a Donation</h2>
+        <form class="form" action="#" method="POST" aria-describedby="donation-note" novalidate>
+          <label for="amount">Donation Amount (USD)</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            min="1"
+            required
+            placeholder="Enter amount (minimum $1)"
+            aria-required="true"
+            aria-describedby="amount-desc"
+          />
+          <small id="amount-desc" class="sr-only">Enter the amount you wish to donate in US dollars. Minimum 1 USD.</small>
+
+          <label for="type">Donation Type</label>
+          <select id="type" name="type" aria-required="true">
+            <option value="once">One-Time</option>
+            <option value="monthly">Monthly</option>
+          </select>
+
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Full Name" aria-required="true" />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@mail.com"
+            aria-required="true"
+          />
+
+          <button type="submit" class="btn btn-primary" aria-label="Submit your donation">Donate Now</button>
+        </form>
+        <p id="donation-note" class="note" role="note">
+          We use secure payment processing and never share your data.
+        </p>
+      </div>
+    </section>
+    <!-- Bank Transfer Details -->
+    <section class="section impact" aria-labelledby="bank-transfer-title">
+      <div class="container">
+        <h2 id="bank-transfer-title" class="section-title">Donate via Bank Transfer</h2>
+        <div class="bank-details">
+          <p><strong>Account Name:</strong> St. Joseph the Worker Vocational Training Centre</p>
+          <p><strong>Bank:</strong> Centenary Rural Development Bank</p>
+          <p><strong>Branch:</strong> Mbale</p>
+          <p><strong>Account Number:</strong> 1234567890</p>
+          <p><strong>IBAN:</strong> UG12 CENT 0000 0001 2345 6789 01</p>
+          <p><strong>SWIFT/BIC:</strong> CERBUGKA</p>
+          <p><strong>Currency:</strong> USD / UGX</p>
+        </div>
+        <p class="text-center">
+          Please indicate your name and purpose (e.g., "General Support" or "Scholarship Fund") when making a transfer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Impact of Your Donation -->
+    <section class="section impact" aria-labelledby="impact-title">
+      <div class="container">
+        <h2 id="impact-title" class="section-title">Where Your Donation Goes</h2>
+        <ul class="mission-list" role="list">
+          <li><i class="fas fa-tools" aria-hidden="true"></i> Training Equipment &amp; Tools</li>
+          <li><i class="fas fa-user-graduate" aria-hidden="true"></i> Student Scholarships</li>
+          <li><i class="fas fa-hammer" aria-hidden="true"></i> Building Classrooms &amp; Workshops</li>
+          <li><i class="fas fa-seedling" aria-hidden="true"></i> Sustainable Agriculture Projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section cta" role="region" aria-label="Donation call to action">
+      <div class="container">
+        <h2>Your Support Matters</h2>
+        <p>Together, we can create lasting change in Karamoja. Every contribution counts.</p>
+        <a href="donate.html" class="btn btn-primary" role="button">Donate Again</a>
+      </div>
+    </section>
+    <section class="section faq" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+    <dl style="max-width: 900px; margin: 0 auto;">
+      <dt><strong>How can I donate?</strong></dt>
+      <dd>The easiest way is using the donation form above. You can also donate via bank transfer or contact us for other methods.</dd>
+
+      <dt><strong>Can I dedicate my donation to a specific project?</strong></dt>
+      <dd>Yes! You can specify the donation purpose in the form or in your transfer details.</dd>
+
+      <dt><strong>Why are regular donations helpful?</strong></dt>
+      <dd>Regular donations help us plan better and sustain long-term programs that empower youth in Karamoja.</dd>
+
+      <dt><strong>Is my donation secure?</strong></dt>
+      <dd>Yes, we use secure payment processing and never share your data with third parties.</dd>
+
+      <dt><strong>How much of my donation goes to the projects?</strong></dt>
+      <dd>Over 90% of donations directly support programs, with the rest covering administration and outreach.</dd>
+    </dl>
+  </div>
+</section>
+<style>
+  .faq dl dt {
+    margin-top: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--primary, #E04B1A);
+  }
+  .faq dl dd {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+</style>
+  </main>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <img src="images/logo.webp" alt="St. Joseph the Worker Training Centre" width="180" height="54" class="footer-logo">
+                    <p>Empowering Karamoja's youth through vocational training and skills development since 2021.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>                        
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="mechanics.html">Automotive Mechanics</a></li>
+                        <li><a href="catering.html">Catering & Food</a></li>
+                        <li><a href="carpentry.html">Carpentry</a></li>
+                        <li><a href="agriculture.html">Agriculture</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Kosike, Amudat District<br>Karamoja, Uganda</p>
+                        <p><i class="fas fa-phone"></i> +256 772 123 456</p>
+                        <p><i class="fas fa-envelope"></i> info@stjosephtraining.org</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 St. Joseph the Worker Training Centre. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <!-- JS Placeholder for Mobile menu toggle -->
+  <script>
+    const toggleBtn = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+   <!-- JavaScript -->
+    <script src="js/main.js"></script>
+     <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+  const form = document.querySelector('form[name="donate"]');
+  form.addEventListener('submit', function(event) {
+    let valid = true;
+    const amount = form.querySelector('#amount');
+    const name = form.querySelector('#name');
+    const email = form.querySelector('#email');
+
+    // Clear previous error styles
+    [amount, name, email].forEach(el => el.style.borderColor = '');
+
+    if (!amount.value || Number(amount.value) < 1) {
+      amount.style.borderColor = 'red';
+      valid = false;
+    }
+    if (!name.value.trim()) {
+      name.style.borderColor = 'red';
+      valid = false;
+    }
+    if (!email.value.trim() || !email.value.includes('@')) {
+      email.style.borderColor = 'red';
+      valid = false;
+    }
+
+    if (!valid) {
+      event.preventDefault();
+      alert('Please fill in all required fields correctly.');
+    }
+  });
+</script>
+</body>
+</html>
