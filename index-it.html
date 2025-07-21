@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Centro di Formazione Professionale San Giuseppe - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!-- Selettore Lingua -->
+    <div class="language-selector">
+      <button id="lang-toggle" class="lang-toggle">
+        <span class="current-lang">
+          <img src="https://flagcdn.com/w20/it.png" alt="Italiano" width="20">
+          Italiano
+        </span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
+
+      <div class="language-modal" id="languageModal">
+        <div class="language-modal-content">
+          <h2><i class="fas fa-language"></i> Seleziona Lingua</h2>
+          <ul class="language-options">
+            <li>
+              <a href="index.html" class="language-option" data-lang="en">
+                <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20">
+                English
+              </a>
+            </li>
+            <li>
+              <a href="index-it.html" class="language-option" data-lang="it">
+                <img src="https://flagcdn.com/w20/it.png" alt="Italiano" width="20">
+                Italiano
+              </a>
+            </li>
+            <li>
+              <a href="index-de.html" class="language-option" data-lang="de">
+                <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20">
+                Deutsch
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+  <!-- Intestazione -->
+  <header>
+    <div class="header-container container">
+      <div class="logo-container">
+        <a href="index-it.html" class="logo">
+          <img src="images/logo.png" alt="Logo Centro di Formazione Professionale San Giuseppe" />
+        </a>
+        <span class="site-name">San Giuseppe VTC</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Apri menu" aria-expanded="false">&#9776;</button>
+      
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index-it.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="admissions-it.html" class="nav-link">Ammissioni</a></li>
+          <li class="nav-item"><a href="programs-it.html" class="nav-link">Corsi</a></li>
+          <li class="nav-item"><a href="testimonials-it.html" class="nav-link">Testimonianze</a></li>
+          <li class="nav-item"><a href="about-it.html" class="nav-link">Chi Siamo</a></li>
+          <li class="nav-item"><a href="contact-it.html" class="nav-link">Contatti</a></li>
+        </ul>
+        <a href="donate-it.html" class="donate-btn">Dona</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Sezione principale">
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+
+    <div class="container hero-content" id="main-content">
+      <h1 class="hero-title">Trasformare <span class="text-highlight">Karamoja</span></h1>
+      <h2 class="hero-title">Attraverso le Competenze Professionali</h2>
+      <p class="hero-text">"Entra per imparare, vai per servire" - Potenziare i giovani con formazione pratica e competenze per aumentare le opportunità di lavoro dal 2021</p>
+      <div class="cta-buttons">
+        <a href="programs-it.html" class="btn btn-primary">Esplora i Corsi</a>
+        <a href="donate-it.html" class="btn btn-secondary">Sostieni la Nostra Missione</a>
+      </div>
+    </div>
+
+    <div class="scroll-down" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <section class="section mission">
+    <div class="container">
+      <h2 class="section-title">La Nostra Missione</h2>
+      <div class="mission-content">
+        <p>Il Centro di Formazione Professionale San Giuseppe offre <strong>formazione professionale gratuita</strong> ai giovani svantaggiati di Karamoja, Uganda. Ci impegniamo a fornire ai giovani le competenze necessarie per promuovere crescita economica e indipendenza.</p>
+        <ul class="mission-list">
+          <li><i class="fas fa-wrench" aria-hidden="true"></i> Meccanica Automobilistica</li>
+          <li><i class="fas fa-utensils" aria-hidden="true"></i> Ristorazione e Ospitalità</li>
+          <li><i class="fas fa-hammer" aria-hidden="true"></i> Falegnameria e Costruzioni</li>
+          <li><i class="fas fa-brick-wall" aria-hidden="true"></i> Posa Mattoni e Pratica del Calcestruzzo</li>
+          <li><i class="fas fa-tractor" aria-hidden="true"></i> Agricoltura Sostenibile</li>
+          <li><i class="fas fa-sewing-machine" aria-hidden="true"></i> Sartoria</li>   
+        </ul>
+        <p>Guidati dal nostro motto: <em>"Entra per imparare, vai per servire."</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Corsi -->
+  <section class="section programs">
+    <div class="container">
+      <h2 class="section-title">I Nostri Corsi di Formazione</h2>
+      <div class="programs-grid">
+        <article class="program-card">
+          <div class="program-img-container">
+            <img src="images/catering.jpg" alt="Studenti che preparano cibo in cucina" width="400" height="300" loading="lazy" class="program-img">
+          </div>
+          <div class="program-content">
+            <h3>Ristorazione e Ospitalità</h3>
+            <div class="program-meta">
+              <span><i class="far fa-clock" aria-hidden="true"></i> 6 Mesi</span>
+              <span><i class="fas fa-user-graduate" aria-hidden="true"></i> Certificato</span>
+            </div>
+            <p>Competenze professionali in cucina, sicurezza alimentare e gestione aziendale per carriere culinarie.</p>
+            <a href="programs-it.html" class="btn btn-outline">Scopri di più</a>
+          </div>
+        </article>
+        
+        <article class="program-card">
+          <div class="program-img-container">
+            <img src="images/tailoring.jpg" alt="Studenti in classe di sartoria" width="400" height="300" loading="lazy" class="program-img">
+          </div>
+          <div class="program-content">
+            <h3>Competenze Sostenibili di Sartoria</h3>
+            <div class="program-meta">
+              <span><i class="far fa-clock" aria-hidden="true"></i> 6 Mesi</span>
+              <span><i class="fas fa-user-graduate" aria-hidden="true"></i> Certificato</span>
+            </div>
+            <p>Questo progetto fornirà formazione nelle competenze di sartoria aumentando le opportunità di impiego e imprenditoriali per i giovani di Karamoja, Uganda.</p>
+            <a href="programs-it.html" class="btn btn-outline">Scopri di più</a>
+          </div>
+        </article> 
+
+        <article class="program-card">
+          <div class="program-img-container">
+            <img src="images/brickmaking.jpg" alt="Studenti nel campo BCP" width="400" height="300" loading="lazy" class="program-img">
+          </div>
+          <div class="program-content">
+            <h3>Posa Mattoni e Pratica del Calcestruzzo (BCP)</h3>
+            <div class="program-meta">
+              <span><i class="far fa-clock" aria-hidden="true"></i> 6 Mesi</span>
+              <span><i class="fas fa-user-graduate" aria-hidden="true"></i> Certificato</span>
+            </div>
+            <p>I mattoni realizzati dai tirocinanti saranno venduti per contribuire al reddito della scuola e alcuni mattoni saranno utilizzati per le esigenze costruttive della scuola stessa.</p>
+            <a href="programs-it.html" class="btn btn-outline">Scopri di più</a>
+          </div>
+        </article> 
+      </div>
+      <div class="text-center">
+        <a href="programs-it.html" class="btn btn-primary">Visualizza Tutti i Corsi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Impatto -->
+  <section class="section impact" aria-labelledby="impact-title">
+    <div class="container">
+      <h2 id="impact-title" class="section-title">Il Nostro Impatto</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <div class="impact-number">500+</div>
+          <div class="impact-label">Diplomati</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">85%</div>
+          <div class="impact-label">Tasso di Inserimento Lavorativo</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">15</div>
+          <div class="impact-label">Corsi Offerti</div>
+        </div>
+        <div class="impact-item">
+          <div class="impact-number">5</div>
+          <div class="impact-label">Anni di Servizio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Testimonianze -->
+  <section class="section testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <h2 id="testimonials-title" class="section-title">Cosa Dicono i Nostri Studenti</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          <p class="testimonial-content">"La formazione ricevuta ha cambiato la mia vita. Gli istruttori sono competenti e disponibili."</p>
+          <footer class="testimonial-author">
+            <img src="images/testimonial1.jpg" alt="Foto di Benjamin Lokiru" />
+            <cite>Benjamin Lokiru</cite>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-content">"Ottima esperienza pratica e eccellente assistenza per l'inserimento lavorativo."</p>
+          <footer class="testimonial-author">
+            <img src="images/testimonial2.jpg" alt="Foto di Simon Nabiswa" />
+            <cite>Simon Nabiswa</cite>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p class="testimonial-content">"Un ambiente accogliente che si prende davvero cura del successo degli studenti."</p>
+          <footer class="testimonial-author">
+            <img src="images/testimonial3.jpg" alt="Foto di Isaac Lotai" />
+            <cite>Isaac Lotai</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section cta" aria-label="Invito all'azione">
+    <div class="container cta-content">
+      <h2>Pronto a iniziare il tuo percorso?</h2>
+      <p>Iscriviti oggi e sviluppa le competenze per avere successo nella carriera che hai scelto.</p>
+      <div class="cta-buttons">
+        <a href="admissions-it.html" class="btn btn-primary">Iscriviti</a>
+        <a href="programs-it.html" class="btn btn-outline">Visualizza Corsi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Chi Siamo</h3>
+          <img src="images/logo.png" alt="Centro di Formazione Professionale San Giuseppe" width="180" height="54" class="footer-logo">
+          <p>Empowerment dei giovani di Karamoja attraverso la formazione professionale e lo sviluppo di competenze dal 2021.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Link Rapidi</h3>
+          <ul>
+            <li><a href="index-it.html">Home</a></li>
+            <li><a href="programs-it.html">Corsi</a></li>
+            <li><a href="testimonials-it.html">Testimonianze</a></li>
+            <li><a href="about-it.html">Chi Siamo</a></li>
+            <li><a href="contact-it.html">Contatti</a></li>
+            <li><a href="admissions-it.html">Ammissioni</a></li>                        
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Corsi</h3>
+          <ul>
+            <li><a href="mechanics-it.html">Meccanica Automobilistica</a></li>
+            <li><a href="catering-it.html">Ristorazione e Cucina</a></li>
+            <li><a href="carpentry-it.html">Falegnameria</a></li>
+            <li><a href="agriculture-it.html">Agricoltura</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contatti</h3>
+          <address>
+            <p><i class="fas fa-map-marker-alt"></i> Kosike, Distretto di Amudat<br>Karamoja, Uganda</p>
+            <p><i class="fas fa-phone"></i> +256 772 123 456</p>
+            <p><i class="fas fa-envelope"></i> info@stjosephtraining.org</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Centro di Formazione Professionale San Giuseppe. Tutti i diritti riservati.</p>
+        <div class="footer-legal">
+          <a href="privacy-it.html">Privacy Policy</a>
+          <a href="terms-it.html">Termini di Servizio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -3,136 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | St. Joseph the Worker Training Centre</title>
-  <meta name="description" content="Learn about St. Joseph the Worker Vocational Training Centre’s mission, vision, and team." />
-  
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css" />  
+  <title>St. Joseph the Worker Vocational Training Center - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="../css/styles-2.css"/>   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Language Selector -->
+    <div class="language-selector">
+      <button id="lang-toggle" class="lang-toggle">
+        <span class="current-lang">
+          <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20">
+          English
+        </span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
 
-  <!-- Top Info Bar -->
-  <div class="info-bar" aria-label="Utility navigation">
-    <div class="container">
-      <div class="info-links">
-        <a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
-        <a href="faq.html"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQ</a>
-        <div class="language-selector" tabindex="0" aria-haspopup="listbox" aria-expanded="false" role="button" aria-controls="language-options">
-          <button id="language-toggle" aria-label="Select Language" aria-expanded="false" aria-controls="language-options">
-            EN <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </button>
-          <ul id="language-options" role="listbox" hidden>
-            <li role="option" tabindex="-1" aria-selected="true">English</li>
-            <li role="option" tabindex="-1">Swahili</li>
-            <li role="option" tabindex="-1">French</li>
+      <div class="language-modal" id="languageModal">
+        <div class="language-modal-content">
+          <h2><i class="fas fa-language"></i> Select Language</h2>
+          <ul class="language-options">
+            <li>
+              <a href="index.html" class="language-option" data-lang="en">
+                <img src="https://flagcdn.com/w20/gb.png" alt="English" width="20">
+                English
+              </a>
+            </li>
+            <li>
+              <a href="index-it.html" class="language-option" data-lang="it">
+                <img src="https://flagcdn.com/w20/it.png" alt="Italian" width="20">
+                Italiano
+              </a>
+            </li>
+            <li>
+              <a href="index-de.html" class="language-option" data-lang="de">
+                <img src="https://flagcdn.com/w20/de.png" alt="German" width="20">
+                Deutsch
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Header -->
   <header>
     <div class="header-container container">
-      <a href="index.html" class="logo" aria-label="Go to homepage">
-        <img src="images/logo.webp" alt="St. Joseph the Worker Vocational Training Center Logo" />
-      </a>
-      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Navigation">
+      <div class="logo-container">
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="St. Joseph the Worker Vocational Training Center Logo" />
+        </a>
+        <span class="site-name">St. Joseph The Worker VTC</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      
+      <nav class="main-nav" id="main-nav">
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
-          <li class="nav-item nav-dropdown"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
           <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-          <li class="nav-item nav-dropdown"><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-        <a href="donate.html" class="donate-btn" aria-label="Donate to support our programs">Donate</a>
+        <a href="donate.html" class="donate-btn">Donate</a>
       </nav>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-controls="main-nav" aria-expanded="false" id="mobile-menu-toggle">&#9776;</button>
     </div>
   </header>
 
-    <!-- Hero Section -->
-    <section class="our-story-section container">
-  <h1 class="section-title text-center">Our Story & Mission</h1>
 
-  <div class="story-grid">
-    <div class="text-content">
-      <h2>Our Story</h2>
-      <p>St. joseph the worker was established in 2021 in Kosike, Amudat, Karamoja, Uganda, as a pioneering initiative to empower youth through vocational training, cultural preservation, and sustainable community development. Born from a vision to transform lives, St. Joseph the worker is committed to building peaceful, self-reliant communities by equipping young people with practical skills and confidence.</p>
-      
-      <h2>Our Mission</h2>
-      <p>To equip Karamoja’s youth and local communities with practical vocational skills, leadership, and entrepreneurship training that promote peace, cultural pride, economic independence, and environmental stewardship.</p>
-      
-      <h2>Our Vision</h2>
-      <p>A transformed Karamoja where empowered youth drive sustainable development, nurture peace, and preserve the rich cultural heritage of the region for future generations.</p>
-      
-      <h2>Our Values</h2>
-      <ul>
-        <li><strong>Integrity:</strong> We act honestly and ethically in all we do.</li>
-        <li><strong>Community:</strong> We believe in the power of unity and mutual support.</li>
-        <li><strong>Innovation:</strong> We encourage creative solutions to local challenges.</li>
-        <li><strong>Sustainability:</strong> We promote practices that protect the environment and future livelihoods.</li>
-        <li><strong>Respect:</strong> We honor the diverse cultures and traditions of Karamoja.</li>
-      </ul>
-      
-      <p class="donate-cta">
-        Your support can transform lives in Karamoja. <a href="donate.html" class="btn btn-primary">Donate Today</a> <p>and help us build a brighter future.
-      </p>
-    </div>
+  <!-- Main Content: Our Story & Mission -->
+  <main>
+    <section class="our-story-section container" aria-labelledby="our-story-title">
+      <h1 id="our-story-title" class="section-title text-center">Our Story & Mission</h1>
 
-    <div class="image-gallery">
-      <img src="images/kalya-community-1.jpg" alt="Youth training at Kalya Peace Village" />
-      <img src="images/kalya-culture-2.jpg" alt="Traditional Karamoja cultural dance" />
-      <img src="images/kalya-agriculture-3.jpg" alt="Sustainable farming at Kalya Peace Village" />
-    </div>
-  </div>
-</section>
+      <div class="story-grid">
+        <div class="text-content" data-aos="fade-up" data-aos-duration="800">
+          <h2>Our Story</h2>
+          <p>St. Joseph the Worker was established in 2021 in Kosike, Amudat, Karamoja, Uganda, as a pioneering initiative to empower youth through vocational training, cultural preservation, and sustainable community development. Born from a vision to transform lives, St. Joseph the Worker is committed to building peaceful, self-reliant communities by equipping young people with practical skills and confidence.</p>
 
+          <h2>Our Mission</h2>
+          <p>To equip Karamoja’s youth and local communities with practical vocational skills, leadership, and entrepreneurship training that promote peace, cultural pride, economic independence, and environmental stewardship.</p>
 
+          <h2>Our Vision</h2>
+          <p>A transformed Karamoja where empowered youth drive sustainable development, nurture peace, and preserve the rich cultural heritage of the region for future generations.</p>
 
-<main class="container section">
-  
-  </article>
+          <h2>Our Values</h2>
+          <ul>
+            <li><strong>Integrity:</strong> We act honestly and ethically in all we do.</li>
+            <li><strong>Community:</strong> We believe in the power of unity and mutual support.</li>
+            <li><strong>Innovation:</strong> We encourage creative solutions to local challenges.</li>
+            <li><strong>Sustainability:</strong> We promote practices that protect the environment and future livelihoods.</li>
+            <li><strong>Respect:</strong> We honor the diverse cultures and traditions of Karamoja.</li>
+          </ul>
 
-  <h1 class="section-title text-center">Meet Our Team</h1>
-  <article class="team-member">
-    <h2>Leadership</h2>
-    <p>Our dedicated leadership team…</p>
-  </article>
-  <article class="team-member">
-    <h2>Instructors</h2>
-    <p>Experienced instructors with…</p>
-  </article>
-  <article class="team-member">
-    <h2>Support Staff</h2>
-    <p>Our support staff ensures…</p>
-  </article>
-  <article>
-  <h2>Kalya Peace Village Partnership</h2>
-  <p>
-    St. Joseph the Worker Vocational Training Centre partners with 
-    <strong>Kalya Peace Village</strong>, a youth-led social enterprise in Kosike, Amudat.
-    Launched by local Karamoja youth during the COVID-19 pandemic, Kalya Peace Village supporting youth initiative on  cultural preservation,
-    eco‑tourism, and peacebuilding through cultural tours, eco‑lodging, and vocational training support.
-  </p>
-</article>
+          <p class="donate-cta">
+            Your support can transform lives in Karamoja. <a href="donate.html" class="btn btn-primary">Donate Today</a> and help us build a brighter future.
+          </p>
+        </div>
 
-</main>
+        <div class="image-gallery" data-aos="fade-left" data-aos-duration="800">
+          <img src="images/kalya-community-1.jpg" alt="Youth training at Kalya Peace Village" loading="lazy" />
+          <img src="images/kalya-culture-2.jpg" alt="Traditional Karamoja cultural dance" loading="lazy" />
+          <img src="images/kalya-agriculture-3.jpg" alt="Sustainable farming at Kalya Peace Village" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
+    <!-- Meet Our Team -->
+    <section class="container section" aria-labelledby="team-title" data-aos="fade-up" data-aos-duration="800">
+      <h1 id="team-title" class="section-title text-center">Meet Our Team</h1>
+
+      <article class="team-member">
+        <h2>Leadership</h2>
+        <p>Our dedicated leadership team…</p>
+      </article>
+      <article class="team-member">
+        <h2>Instructors</h2>
+        <p>Experienced instructors with…</p>
+      </article>
+      <article class="team-member">
+        <h2>Support Staff</h2>
+        <p>Our support staff ensures…</p>
+      </article>
+      <article>
+        <h2>Kalya Peace Village Partnership</h2>
+        <p>
+          St. Joseph the Worker Vocational Training Centre partners with
+          <strong>Kalya Peace Village</strong>, a youth-led social enterprise in Kosike, Amudat.
+          Launched by local Karamoja youth during the COVID-19 pandemic, Kalya Peace Village supports youth initiatives on cultural preservation,
+          eco-tourism, and peacebuilding through cultural tours, eco-lodging, and vocational training support.
+        </p>
+      </article>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
@@ -207,5 +220,7 @@
   <!-- Main JS -->
   <script src="js/main.js" defer></script>
   <script src="js/script.js" defer></script>
+  <script src="js/script-2.js" defer></script>
+  <script src="js/main-2.js" defer></script>
 </body>
 </html>
